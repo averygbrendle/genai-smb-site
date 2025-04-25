@@ -37,7 +37,7 @@ export default function LandingPage() {
   <input type="text" name="name" placeholder="Name" required className="border border-gray-300 p-2 rounded-xl" />
   <input type="email" name="email" placeholder="Email" required className="border border-gray-300 p-2 rounded-xl" />
   <input type="text" name="business" placeholder="Business Type (law firm, clinic, etc.)" className="border border-gray-300 p-2 rounded-xl" />
-  <textarea name="message" placeholder="What do you want AI to help with?" className="border border-gray-300 p-2 rounded-xl" rows="3"></textarea>
+  <textarea name="message" placeholder="What do you want AI to help with?" className="border border-gray-300 p-2 rounded-xl" rows={3}></textarea>
   <button type="submit" className="bg-red-500 text-white rounded-xl px-4 py-2 hover:bg-red-600">
     Get Started
   </button>
