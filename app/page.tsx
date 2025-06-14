@@ -42,7 +42,7 @@ function PainSolutionGrid() {
       <div className="max-w-4xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {items.map((item, index) => (
-            <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
+            <div key={index} className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-sm dark:text-gray-100">
               <div className="mb-4">
                 <h3 className="text-red-600 font-semibold mb-2">Pain</h3>
                 <p className="text-gray-800 dark:text-gray-100">{item.pain}</p>
@@ -77,7 +77,7 @@ function IndustryCards() {
   return (
     <section className="py-16 bg-white dark:bg-gray-900">
       <div className="max-w-4xl mx-auto px-6">
-        <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+        <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm border border-gray-100 dark:text-gray-100">
           <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">{card.title}</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
@@ -126,7 +126,7 @@ function OfferSection() {
             <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">2</span>
             <div>
               <h3 className="font-bold mb-2 text-gray-900 dark:text-gray-100">Prototype (48 hrs)</h3>
-              <p className="text-gray-800 dark:text-gray-100">We show a live demo solving one pain point.</p>
+              <p className="text-gray-800 dark:text-gray-100">We show a live proof of concept demo.</p>
             </div>
           </li>
           <li className="flex gap-4">
