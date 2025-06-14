@@ -2,18 +2,18 @@ import Link from "next/link";
 
 function HeroSection() {
   return (
-    <section className="py-16 text-center">
+    <section className="py-16 text-center bg-white dark:bg-gray-900">
       <div className="max-w-4xl mx-auto px-6">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-gray-100">
           Still wasting hours on paperwork, emails, and data entry?
         </h1>
-        <h2 className="text-2xl md:text-3xl font-semibold mb-6">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
           Turn busywork into free time with AI automations built <strong>for your business</strong>—ready in 7 days.
         </h2>
-        <p className="text-xl mb-8 text-gray-600">
+        <p className="text-xl mb-8 text-gray-800 dark:text-gray-200">
           We replace manual tasks with smart, affordable AI teammates, so you can get back to running the business you love.
         </p>
-        <Link href="/#contact" className="btn-primary inline-block">
+        <Link href="/#contact" className="bg-blue-600 text-white rounded-lg px-4 py-2 hover:bg-blue-700 inline-block">
           Book My Free 30-Minute AI Audit
         </Link>
       </div>
@@ -38,18 +38,18 @@ function PainSolutionGrid() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-4xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {items.map((item, index) => (
             <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
               <div className="mb-4">
                 <h3 className="text-red-600 font-semibold mb-2">Pain</h3>
-                <p className="text-gray-800">{item.pain}</p>
+                <p className="text-gray-800 dark:text-gray-100">{item.pain}</p>
               </div>
               <div>
                 <h3 className="text-green-600 font-semibold mb-2">AI Solution</h3>
-                <p className="text-gray-800">{item.solution}</p>
+                <p className="text-gray-800 dark:text-gray-100">{item.solution}</p>
               </div>
             </div>
           ))}
@@ -75,29 +75,29 @@ function IndustryCards() {
   };
 
   return (
-    <section className="py-16">
+    <section className="py-16 bg-white dark:bg-gray-900">
       <div className="max-w-4xl mx-auto px-6">
         <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
-          <h3 className="text-2xl font-semibold mb-6">{card.title}</h3>
+          <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">{card.title}</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h4 className="text-red-600 font-semibold mb-4">Common Pains</h4>
+              <h4 className="text-red-600 font-bold mb-4">Common Pains</h4>
               <ul className="space-y-3">
                 {card.pains.map((pain, index) => (
                   <li key={index} className="flex items-start gap-2">
                     <span className="text-red-500">•</span>
-                    <span className="text-gray-800">{pain}</span>
+                    <span className="text-gray-800 dark:text-gray-100">{pain}</span>
                   </li>
                 ))}
               </ul>
             </div>
             <div>
-              <h4 className="text-green-600 font-semibold mb-4">AI Solutions</h4>
+              <h4 className="text-green-600 font-bold mb-4">AI Solutions</h4>
               <ul className="space-y-3">
                 {card.solutions.map((solution, index) => (
                   <li key={index} className="flex items-start gap-2">
                     <span className="text-green-500">•</span>
-                    <span className="text-gray-800">{solution}</span>
+                    <span className="text-gray-800 dark:text-gray-100">{solution}</span>
                   </li>
                 ))}
               </ul>
@@ -111,37 +111,37 @@ function IndustryCards() {
 
 function OfferSection() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-8 text-center">How It Works</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-gray-100">How It Works</h2>
         <ol className="space-y-6 mb-12">
           <li className="flex gap-4">
             <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">1</span>
             <div>
-              <h3 className="font-semibold mb-2">Discovery Call (30 min)</h3>
-              <p className="text-gray-600">You tell us where the headaches are.</p>
+              <h3 className="font-bold mb-2 text-gray-900 dark:text-gray-100">Discovery Call (30 min)</h3>
+              <p className="text-gray-800 dark:text-gray-100">You tell us where the headaches are.</p>
             </div>
           </li>
           <li className="flex gap-4">
             <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">2</span>
             <div>
-              <h3 className="font-semibold mb-2">Prototype (48 hrs)</h3>
-              <p className="text-gray-600">We show a live demo solving one pain point.</p>
+              <h3 className="font-bold mb-2 text-gray-900 dark:text-gray-100">Prototype (48 hrs)</h3>
+              <p className="text-gray-800 dark:text-gray-100">We show a live demo solving one pain point.</p>
             </div>
           </li>
           <li className="flex gap-4">
             <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">3</span>
             <div>
-              <h3 className="font-semibold mb-2">Go-Live (Day 7)</h3>
-              <p className="text-gray-600">Your custom solution is integrated with your existing tools.</p>
+              <h3 className="font-bold mb-2 text-gray-900 dark:text-gray-100">Go-Live (Day 7)</h3>
+              <p className="text-gray-800 dark:text-gray-100">Your custom solution is integrated with your existing tools.</p>
             </div>
           </li>
         </ol>
-        <div className="bg-white p-8 rounded-xl shadow-sm text-center">
-          <p className="text-xl mb-4">
+        <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm text-center">
+          <p className="text-xl mb-4 text-gray-900 dark:text-gray-100">
             Flat-Fee Launch: <strong>$3,000</strong>. Early-Adopter Deal: <strong>50% off for the first 3 clients</strong>.
           </p>
-          <p className="text-gray-600 italic">
+          <p className="text-gray-600 dark:text-gray-300 italic">
             If it doesn&apos;t save you <em>at least</em> 5 hours a week, you don&apos;t pay us—simple.
           </p>
         </div>
@@ -152,10 +152,10 @@ function OfferSection() {
 
 function CTASection() {
   return (
-    <section className="py-16">
+    <section className="py-16 bg-white dark:bg-gray-900">
       <div className="max-w-4xl mx-auto px-6 text-center">
-        <h3 className="text-3xl font-bold mb-8">Ready to win back your time?</h3>
-        <Link href="/#contact" className="btn-primary inline-block">
+        <h3 className="text-3xl font-bold mb-8 text-gray-900 dark:text-gray-100">Ready to win back your time?</h3>
+        <Link href="/#contact" className="bg-blue-600 text-white rounded-lg px-4 py-2 hover:bg-blue-700 inline-block">
           Schedule My AI Audit
         </Link>
       </div>
@@ -165,15 +165,15 @@ function CTASection() {
 
 function ContactForm() {
   return (
-    <section id="contact" className="py-16 bg-gray-50">
+    <section id="contact" className="py-16 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-4xl mx-auto px-6">
-        <div className="bg-white p-8 rounded-xl shadow-sm">
-          <h3 className="text-2xl font-semibold mb-6">Get Started</h3>
+        <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm">
+          <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">Get Started</h3>
           <form action="https://formspree.io/f/xrbqgrpa" method="POST" className="grid grid-cols-1 gap-4">
-            <input type="text" name="name" placeholder="Name" required className="border border-gray-300 p-3 rounded-lg" />
-            <input type="email" name="email" placeholder="Email" required className="border border-gray-300 p-3 rounded-lg" />
-            <input type="text" name="business" placeholder="Business Type (law firm, clinic, etc.)" className="border border-gray-300 p-3 rounded-lg" />
-            <textarea name="message" placeholder="What do you want AI to help with?" className="border border-gray-300 p-3 rounded-lg" rows={3}></textarea>
+            <input type="text" name="name" placeholder="Name" required className="border border-gray-300 dark:border-gray-600 p-3 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100" />
+            <input type="email" name="email" placeholder="Email" required className="border border-gray-300 dark:border-gray-600 p-3 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100" />
+            <input type="text" name="business" placeholder="Business Type (law firm, clinic, etc.)" className="border border-gray-300 dark:border-gray-600 p-3 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100" />
+            <textarea name="message" placeholder="What do you want AI to help with?" className="border border-gray-300 dark:border-gray-600 p-3 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100" rows={3}></textarea>
             <button type="submit" className="bg-blue-600 text-white rounded-lg px-4 py-2 hover:bg-blue-700">
               Get Started
             </button>
